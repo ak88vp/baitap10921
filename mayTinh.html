@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>máy tính cơ bản</title>
+</head>
+<body>
+<h1> caculator</h1>
+<input type="text" id="giatria">
+<input type="text" id="giatrib">
+<br>
+<br>
+
+
+<button onclick="cong()" value="a">cộng</button>
+<button onclick="tru()" value="a" >trừ</button>
+<button onclick="nhan()" value="a" >nhân</button>
+<button onclick="chia()" value="a" >chia</button>
+
+
+
+</body>
+
+<script>
+    function cong(){
+        let giatria=+document.getElementById('giatria').value
+        let giatrib=+document.getElementById('giatrib').value
+        let tongab= giatria+ giatrib
+  alert(tongab)
+
+
+  }
+  function tru() {
+      let giatria = +document.getElementById('giatria').value
+      let giatrib = +document.getElementById('giatrib').value
+      let hieuab = giatria - giatrib
+      alert(hieuab)
+  }
+function nhan() {
+    let giatria=+document.getElementById('giatria').value
+    let giatrib=+document.getElementById('giatrib').value
+    let tichab= giatria * giatrib
+    alert(tichab)
+}
+function chia() {
+    let giatria=+document.getElementById('giatria').value
+    let giatrib=+document.getElementById('giatrib').value
+    let konhoab= giatria / giatrib
+    alert(konhoab)
+}
+
+
+
+
+
+
+
+
+
+</script>
+</html>
